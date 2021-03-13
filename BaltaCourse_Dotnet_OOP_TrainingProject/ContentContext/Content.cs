@@ -1,8 +1,15 @@
+using System;
+
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {
-    public class Content
+    public abstract class Content
     {
-        public int Id { get; set; }
+        public Content()
+        {
+            Id = Guid.NewGuid();
+        }
+
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Url { get; set; }
     }
