@@ -1,3 +1,5 @@
+using BaltaCourse_Dotnet_OOP_TrainingProject.NotificationContext;
+
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {
     public class CareerItem : Base
@@ -9,7 +11,7 @@ namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
             Course course)
         {
             if (course == null)
-                throw new System.Exception("O curso não pode ser nulo");
+                AddNotification(new Notification("Course", "Curso inválido."));
 
             Order = order;
             Title = title;
