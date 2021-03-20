@@ -1,4 +1,5 @@
 using BaltaCourse_Dotnet_OOP_TrainingProject.NotificationContext;
+using BaltaCourse_Dotnet_OOP_TrainingProject.SharedContext;
 
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {

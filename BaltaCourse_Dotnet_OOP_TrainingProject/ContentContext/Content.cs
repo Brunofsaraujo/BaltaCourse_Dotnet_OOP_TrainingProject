@@ -1,4 +1,4 @@
-using System;
+using BaltaCourse_Dotnet_OOP_TrainingProject.SharedContext;
 
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {
