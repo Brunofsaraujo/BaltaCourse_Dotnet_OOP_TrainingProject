@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext;
+using BaltaCourse_Dotnet_OOP_TrainingProject.SubscriptionContext;
 
 namespace BaltaCourse_Dotnet_OOP_TrainingProject
 {
@@ -76,7 +77,7 @@ namespace BaltaCourse_Dotnet_OOP_TrainingProject
                 order: 3,
                 title: "Aprenda ASP.NET",
                 description: "",
-                course: null
+                course: courseAspNet
             );
 
             var careers = new List<Career>();
@@ -101,6 +102,10 @@ namespace BaltaCourse_Dotnet_OOP_TrainingProject
                 }
             }
             Console.WriteLine($"\n");
+
+            var paypalSubscription = new PaypalSubscription();
+            var student = new Student();
+            student.CreateSubscription(paypalSubscription);
         }
     }
 }
