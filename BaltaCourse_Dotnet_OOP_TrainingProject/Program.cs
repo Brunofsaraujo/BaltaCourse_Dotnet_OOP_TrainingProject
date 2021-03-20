@@ -62,21 +62,21 @@ namespace BaltaCourse_Dotnet_OOP_TrainingProject
                 order: 2,
                 title: "Aprenda OOP",
                 description: "",
-                course: null
+                course: courseOOP
             );
 
             var careerItem = new CareerItem(
                 order: 1,
-                title: "Comece por aqui",
+                title: "Comece por aqui, aprenda csharp",
                 description: "",
-                course: null
+                course: courseCsharp
             );
 
             var careerItem3 = new CareerItem(
                 order: 3,
-                title: "Aprenda .NET",
+                title: "Aprenda ASP.NET",
                 description: "",
-                course: null
+                course: courseAspNet
             );
 
             var careers = new List<Career>();
@@ -91,6 +91,7 @@ namespace BaltaCourse_Dotnet_OOP_TrainingProject
                 foreach (var item in career.Items.OrderBy(x => x.Order))
                 {
                     Console.WriteLine($"{item.Order} - {item.Title}");
+                    Console.WriteLine(item.Course.Title);
                 }
             }
             Console.WriteLine($"\n");
