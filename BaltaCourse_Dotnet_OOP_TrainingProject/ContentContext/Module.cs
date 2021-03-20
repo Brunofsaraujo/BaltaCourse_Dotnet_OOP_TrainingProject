@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {
-    public class Module
+    public class Module : Base
     {
         public Module()
         {

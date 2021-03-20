@@ -1,6 +1,6 @@
 namespace BaltaCourse_Dotnet_OOP_TrainingProject.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Base
     {
         public CareerItem(
             int order,
